@@ -7,10 +7,6 @@ The game's user interface should be intuitive and easy to navigate, with clear i
 
 The "Japanese Learning Games" game should be a valuable resource for anyone looking to improve their Japanese language skills, whether they are beginners or advanced learners. Hopefully this is a great addition to any language learning toolkit
 
-
-
-# Test2
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
 ## Development server
