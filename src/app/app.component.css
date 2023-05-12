@@ -1,0 +1,24 @@
+.gameFrontCardTitle{
+    font-weight: bold;
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    
+}
+@media screen and (max-width: 768px) {
+    .grid-container{
+        grid-template-columns: (1, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+.col{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,32 @@
+<mat-card class="flash-card mat-card" [class.flipped]="isFlipped" (mouseenter)="flipCard()" (mouseleave)="flipCard()" (click)="onCardClick()">
+  <div class="front">
+    <mat-card-content class="centered card-content-styling">
+      <img mat-card-image src={{gameImage}}>
+      {{gameFrontCardTitle}}
+    </mat-card-content>
+  </div>
+  <div class="back">
+    <mat-card-title>{{gameNameTitle}}</mat-card-title>
+    <mat-card-content class="centered">
+      {{gameDescription}}
+    </mat-card-content>
+  </div>
+</mat-card>
+
+  <!--
+<mat-card class="card" style="justify-content: center; text-align: center;">
+    <mat-card-header style="justify-content: center; text-align: center;">
+      <mat-card-title style="padding-bottom: 9px;">{{gameNameTitle}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src={{gameImage}}>
+    <mat-card-content style="justify-content: center; text-align: center;">
+      <p>{{gameDescription}}</p>
+    </mat-card-content>
+    <mat-card-actions style="justify-content: center; text-align: center;">
+      <button mat-button routerLink="">Play Now!</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+
+  -->
