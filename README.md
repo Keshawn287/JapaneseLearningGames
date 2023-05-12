@@ -1,8 +1,11 @@
 # JapaneseLearningGames
+"Japanese Learning Games" is an interactive language learning game built using Angular. I am designing this web application in hopes to help users (and myself) improve their knowledge and recognition of foundational Japanese concepts that should be essential to learning the more complex nuisances of the Japanese writing system.
 
+The game consists of a series of different mini-games, each with a different set of characters, numbers, and things to learn. In each mini-game, the player will be presented with the choice of what they want to learn and how much.
 
+The game's user interface should be intuitive and easy to navigate, with clear instructions provided throughout the use of the web application. Hopefully the game's design and functionality will be optimized for both desktop and mobile devices, making it accessible to a wide range of users.
 
-
+The "Japanese Learning Games" game should be a valuable resource for anyone looking to improve their Japanese language skills, whether they are beginners or advanced learners. Hopefully this is a great addition to any language learning toolkit
 
 
 
