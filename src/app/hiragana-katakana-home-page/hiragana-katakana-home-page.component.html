@@ -1,63 +1,25 @@
 <mat-card class="card">
-    <mat-card-header>
-        <mat-card-title>{{title}}</mat-card-title>
-        <mat-card-subtitle>{{description}}</mat-card-subtitle>
-    </mat-card-header>
-    <mat-grid-list cols="3">
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>{{description}}</mat-card-subtitle>
+  </mat-card-header>
+    <mat-grid-list cols="2">
         <mat-grid-tile class="card-content-container">
-            <mat-card-content class="card-content" routerLink="/Hiragana">3</mat-card-content>
+            <mat-card-content class="card-content" routerLink="/Hiragana">Hiragana</mat-card-content>
         </mat-grid-tile>
         <mat-grid-tile class="card-content-container">
-            <mat-card-content class="card-content">2</mat-card-content>
-        </mat-grid-tile>
-        <mat-grid-tile class="card-content-container">
-            <mat-card-content class="card-content">1</mat-card-content>
+            <mat-card-content class="card-content" routerLink="/Katakana">Katakana</mat-card-content>
         </mat-grid-tile>
     </mat-grid-list>
 </mat-card>
 
-<p>Read Local JSON file student data using typescript HttpClient</p>
-<table id="student">
-    <tr>
-      <th>Hiragana</th>
-      <th>Katakana</th>
-      <th>Romaji</th>
-    </tr>
-    <ng-container *ngFor="let student of objectKeys(id)">
-      <tr *ngIf="student === '2'">
-        <td>{{ id[student].hiragana }}</td>
-        <td>{{ id[student].katakana }}</td>
-        <td>{{ id[student].romaji }}</td>
-      </tr>
-    </ng-container>
-  </table>
-  <table id="student">
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-    </tr>
-    <tr *ngFor="let student of objectKeys(id).slice(0, 103)">
-      <td>{{ id[student].hiragana }}</td>
-      <td>{{ id[student].katakana }}</td>
-      <td>{{ id[student].romaji }}</td>
-    </tr>
-  </table>
-
-  <form>
-    <label>
-      <input type="radio" name="option" value="a" [(ngModel)]="selectedOption"> <div *ngIf="content">
-        
-      </div>
-    </label>
-    <label>
-      <input type="radio" name="option" value="b" [(ngModel)]="selectedOption"> <div *ngIf="content">
-        {{ content }}
-      </div>
-    </label>
-    <button (click)="showContent()">Submit</button>
-  </form>
 
 
 <!--
-    
+    <div style="margin-top: 50px;">
+  <mat-grid-list cols="2" class="card-content-container" rowHeight="300px" rowWidth="200px" style="" mar>
+    <mat-grid-tile class="card-content" routerLink="/Hiragana" colspan="1">Hiragana</mat-grid-tile>
+    <mat-grid-tile class="card-content" routerLink="/Katakana" colspan="1">Katakana</mat-grid-tile>  
+  </mat-grid-list>
+</div>
 -->
