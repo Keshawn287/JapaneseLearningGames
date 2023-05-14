@@ -1,4 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import characterData from '../assets/hiragana-katakana.json'
+import { HttpClient } from '@angular/common/http';
+
+/**
+ * 
+interface Characters {
+  hiragana?: String;
+  katakana?: String;
+  romaji: String;
+}
+ */
 
 @Component({
   selector: 'app-root',
@@ -7,4 +18,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test2';
+
+  
 }

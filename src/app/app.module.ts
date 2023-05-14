@@ -12,13 +12,24 @@ import { HomeMiniGameCardStructureComponent } from './home-mini-game-card-struct
 import { HiraganaKatakanaHomePageComponent } from './hiragana-katakana-home-page/hiragana-katakana-home-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { HiraganaComponent } from './hiragana/hiragana.component';
+import { KatakanaComponent } from './katakana/katakana.component';
+import { CombinedComponent } from './combined/combined.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeMiniGameCardStructureComponent,
     HiraganaKatakanaHomePageComponent,
-    HomeComponent
+    HomeComponent,
+    HiraganaComponent,
+    KatakanaComponent,
+    CombinedComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +40,9 @@ import { HomeComponent } from './home/home.component';
     MatButtonModule,
     MatToolbarModule,
     MatGridListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

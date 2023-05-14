@@ -1,831 +1,818 @@
 [
-    {
+    [
+      "1",
+      {
         "hiragana": "あ",
-        "romaji": "a"
-    },
-    {
-        "hiragana": "い",
-        "romaji": "i"
-    },
-    {
-        "hiragana": "う",
-        "romaji": "u"
-    },
-    {
-        "hiragana": "え",
-        "romaji": "e"
-    },
-    {
-        "hiragana": "お",
-        "romaji": "o"
-    },
-    {
-        "hiragana": "か",
-        "romaji": "ka"
-    },
-    {
-        "hiragana": "き",
-        "romaji": "ki"
-    },
-    {
-        "hiragana": "く",
-        "romaji": "ku"
-    },
-    {
-        "hiragana": "け",
-        "romaji": "ke"
-    },
-    {
-        "hiragana": "こ",
-        "romaji": "ko"
-    },
-    {
-        "hiragana": "さ",
-        "romaji": "sa"
-    },
-    {
-        "hiragana": "し",
-        "romaji": "shi"
-    },
-    {
-        "hiragana": "す",
-        "romaji": "su"
-    },
-    {
-        "hiragana": "せ",
-        "romaji": "se"
-    },
-    {
-        "hiragana": "そ",
-        "romaji": "so"
-    },
-    {
-        "hiragana": "た",
-        "romaji": "ta"
-    },
-    {
-        "hiragana": "ち",
-        "romaji": "chi"
-    },
-    {
-        "hiragana": "つ",
-        "romaji": "tsu"
-    },
-    {
-        "hiragana": "て",
-        "romaji": "te"
-    },
-    {
-        "hiragana": "と",
-        "romaji": "to"
-    },
-    {
-        "hiragana": "な",
-        "romaji": "na"
-    },
-    {
-        "hiragana": "に",
-        "romaji": "ni"
-    },
-    {
-        "hiragana": "ぬ",
-        "romaji": "nu"
-    },
-    {
-        "hiragana": "ね",
-        "romaji": "ne"
-    },
-    {
-        "hiragana": "の",
-        "romaji": "no"
-    },
-    {
-        "hiragana": "は",
-        "romaji": "ha"
-    },
-    {
-        "hiragana": "ひ",
-        "romaji": "hi"
-    },
-    {
-        "hiragana": "ふ",
-        "romaji": "fu"
-    },
-    {
-        "hiragana": "へ",
-        "romaji": "he"
-    },
-    {
-        "hiragana": "ほ",
-        "romaji": "ho"
-    },{
-        "hiragana": "ま",
-        "romaji": "ma"
-    },
-    {
-        "hiragana": "み",
-        "romaji": "mi"
-    },
-    {
-        "hiragana": "む",
-        "romaji": "mu"
-    },
-    {
-        "hiragana": "め",
-        "romaji": "me"
-    },
-    {
-        "hiragana": "も",
-        "romaji": "mo"
-    },{
-        "hiragana": "ら",
-        "romaji": "ra"
-    },
-    {
-        "hiragana": "り",
-        "romaji": "ri"
-    },
-    {
-        "hiragana": "る",
-        "romaji": "ru"
-    },
-    {
-        "hiragana": "れ",
-        "romaji": "re"
-    },
-    {
-        "hiragana": "ろ",
-        "romaji": "ro"
-    },{
-        "hiragana": "や",
-        "romaji": "ya"
-    },
-    {
-        "hiragana": "ゆ",
-        "romaji": "yu"
-    },
-    {
-        "hiragana": "よ",
-        "romaji": "yo"
-    },
-    {
-        "hiragana": "わ",
-        "romaji": "wa"
-    },
-    {
-        "hiragana": "を",
-        "romaji": "wo"
-    },
-    {
-        "hiragana": "ん",
-        "romaji": "n"
-    },
-    {
-        "hiragana": "だ",
-        "romaji": "da"
-    },
-    {
-        "hiragana": "ぢ",
-        "romaji": "ji"
-    },
-    {
-        "hiragana": "づ",
-        "romaji": "zu"
-    },
-    {
-        "hiragana": "で",
-        "romaji": "de"
-    },
-    {
-        "hiragana": "ど",
-        "romaji": "do"
-    },
-    {
-        "hiragana": "ざ",
-        "romaji": "za"
-    },
-    {
-        "hiragana": "じ",
-        "romaji": "ji"
-    },
-    {
-        "hiragana": "ず",
-        "romaji": "zu"
-    },
-    {
-        "hiragana": "ぜ",
-        "romaji": "ze"
-    },
-    {
-        "hiragana": "ぞ",
-        "romaji": "zo"
-    },{
-        "hiragana": "が",
-        "romaji": "ga"
-    },
-    {
-        "hiragana": "ぎ",
-        "romaji": "gi"
-    },
-    {
-        "hiragana": "ぐ",
-        "romaji": "gu"
-    },
-    {
-        "hiragana": "げ",
-        "romaji": "ge"
-    },
-    {
-        "hiragana": "ご",
-        "romaji": "go"
-    },{
-        "hiragana": "ば",
-        "romaji": "ba"
-    },
-    {
-        "hiragana": "び",
-        "romaji": "bi"
-    },
-    {
-        "hiragana": "ぶ",
-        "romaji": "bu"
-    },
-    {
-        "hiragana": "べ",
-        "romaji": "be"
-    },
-    {
-        "hiragana": "ぼ",
-        "romaji": "bo"
-    },{
-        "hiragana": "ぱ",
-        "romaji": "pa"
-    },
-    {
-        "hiragana": "ぴ",
-        "romaji": "pi"
-    },
-    {
-        "hiragana": "ぷ",
-        "romaji": "pu"
-    },
-    {
-        "hiragana": "ぺ",
-        "romaji": "pe"
-    },
-    {
-        "hiragana": "ぽ",
-        "romaji": "po"
-    },{
-        "hiragana": "きゃ",
-        "romaji": "kya"
-    },
-    {
-        "hiragana": "きゅ",
-        "romaji": "kyu"
-    },
-    {
-        "hiragana": "きょ",
-        "romaji": "kyo"
-    },
-    {
-        "hiragana": "しゃ",
-        "romaji": "sha"
-    },
-    {
-        "hiragana": "しゅ",
-        "romaji": "shu"
-    },{
-        "hiragana": "しょ",
-        "romaji": "sho"
-    },
-    {
-        "hiragana": "ちゃ",
-        "romaji": "cha"
-    },
-    {
-        "hiragana": "ちゅ",
-        "romaji": "chu"
-    },
-    {
-        "hiragana": "ちょ",
-        "romaji": "cho"
-    },
-    {
-        "hiragana": "にゃ",
-        "romaji": "nya"
-    },{
-        "hiragana": "にゅ",
-        "romaji": "nyu"
-    },
-    {
-        "hiragana": "にょ",
-        "romaji": "nyo"
-    },
-    {
-        "hiragana": "ひゃ",
-        "romaji": "hya"
-    },
-    {
-        "hiragana": "ひゅ",
-        "romaji": "hyu"
-    },
-    {
-        "hiragana": "ひょ",
-        "romaji": "hyo"
-    },{
-        "hiragana": "みゃ",
-        "romaji": "mya"
-    },
-    {
-        "hiragana": "みゅ",
-        "romaji": "myu"
-    },
-    {
-        "hiragana": "みょ",
-        "romaji": "myo"
-    },
-    {
-        "hiragana": "りゃ",
-        "romaji": "rya"
-    },
-    {
-        "hiragana": "りゅ",
-        "romaji": "ryu"
-    },{
-        "hiragana": "りょ",
-        "romaji": "ryo"
-    },
-    {
-        "hiragana": "ぎゃ",
-        "romaji": "gya"
-    },
-    {
-        "hiragana": "ぎゅ",
-        "romaji": "gyu"
-    },
-    {
-        "hiragana": "ぎょ",
-        "romaji": "gyo"
-    },
-    {
-        "hiragana": "じゃ",
-        "romaji": "ja"
-    },{
-        "hiragana": "じゅ",
-        "romaji": "ju"
-    },
-    {
-        "hiragana": "じょ",
-        "romaji": "jo"
-    },
-    {
-        "hiragana": "ぢゃ",
-        "romaji": "ja"
-    },
-    {
-        "hiragana": "ぢゅ",
-        "romaji": "ju"
-    },
-    {
-        "hiragana": "ぢょ",
-        "romaji": "jo"
-    },{
-        "hiragana": "びゃ",
-        "romaji": "bya"
-    },
-    {
-        "hiragana": "びゅ",
-        "romaji": "byu"
-    },
-    {
-        "hiragana": "びょ",
-        "romaji": "byo"
-    },
-    {
-        "hiragana": "ぴゃ",
-        "romaji": "pya"
-    },
-    {
-        "hiragana": "ぴゅ",
-        "romaji": "pyu"
-    },{
-        "hiragana": "ぴょ",
-        "romaji": "pyo"
-    },
-    {
         "katakana": "ア",
         "romaji": "a"
-    },
-    {
+      }
+    ],
+    [
+      "2",
+      {
+        "hiragana": "い",
         "katakana": "イ",
         "romaji": "i"
-    },
-    {
+      }
+    ],
+    [
+      "3",
+      {
+        "hiragana": "う",
         "katakana": "ウ",
         "romaji": "u"
-    },
-    {
+      }
+    ],
+    [
+      "4",
+      {
+        "hiragana": "え",
         "katakana": "エ",
         "romaji": "e"
-    },
-    {
+      }
+    ],
+    [
+      "5",
+      {
+        "hiragana": "お",
         "katakana": "オ",
         "romaji": "o"
-    },
-    {
+      }
+    ],
+    [
+      "6",
+      {
+        "hiragana": "か",
         "katakana": "カ",
         "romaji": "ka"
-    },
-    {
+      }
+    ],
+    [
+      "7",
+      {
+        "hiragana": "き",
         "katakana": "キ",
         "romaji": "ki"
-    },
-    {
+      }
+    ],
+    [
+      "8",
+      {
+        "hiragana": "く",
         "katakana": "ク",
         "romaji": "ku"
-    },
-    {
+      }
+    ],
+    [
+      "9",
+      {
+        "hiragana": "け",
         "katakana": "ケ",
         "romaji": "ke"
-    },
-    {
+      }
+    ],
+    [
+      "10",
+      {
+        "hiragana": "こ",
         "katakana": "コ",
         "romaji": "ko"
-    },
-    {
+      }
+    ],
+    [
+      "11",
+      {
+        "hiragana": "さ",
         "katakana": "サ",
         "romaji": "sa"
-    },
-    {
+      }
+    ],
+    [
+      "12",
+      {
+        "hiragana": "し",
         "katakana": "シ",
         "romaji": "shi"
-    },
-    {
+      }
+    ],
+    [
+      "13",
+      {
+        "hiragana": "す",
         "katakana": "ス",
         "romaji": "su"
-    },
-    {
+      }
+    ],
+    [
+      "14",
+      {
+        "hiragana": "せ",
         "katakana": "セ",
         "romaji": "se"
-    },
-    {
+      }
+    ],
+    [
+      "15",
+      {
+        "hiragana": "そ",
         "katakana": "ソ",
         "romaji": "so"
-    },
-    {
+      }
+    ],
+    [
+      "16",
+      {
+        "hiragana": "た",
         "katakana": "タ",
         "romaji": "ta"
-    },
-    {
+      }
+    ],
+    [
+      "17",
+      {
+        "hiragana": "ち",
         "katakana": "千",
         "romaji": "chi"
-    },
-    {
+      }
+    ],
+    [
+      "18",
+      {
+        "hiragana": "つ",
         "katakana": "ツ",
         "romaji": "tsu"
-    },
-    {
+      }
+    ],
+    [
+      "19",
+      {
+        "hiragana": "て",
         "katakana": "テ",
         "romaji": "te"
-    },
-    {
+      }
+    ],
+    [
+      "20",
+      {
+        "hiragana": "と",
         "katakana": "ト",
         "romaji": "to"
-    },
-    {
+      }
+    ],
+    [
+      "21",
+      {
+        "hiragana": "な",
         "katakana": "ナ",
         "romaji": "na"
-    },
-    {
+      }
+    ],
+    [
+      "22",
+      {
+        "hiragana": "に",
         "katakana": "ニ",
         "romaji": "ni"
-    },
-    {
+      }
+    ],
+    [
+      "23",
+      {
+        "hiragana": "ぬ",
         "katakana": "ヌ",
         "romaji": "nu"
-    },
-    {
+      }
+    ],
+    [
+      "24",
+      {
+        "hiragana": "ね",
         "katakana": "ネ",
         "romaji": "ne"
-    },
-    {
+      }
+    ],
+    [
+      "25",
+      {
+        "hiragana": "の",
         "katakana": "ノ",
         "romaji": "no"
-    },
-    {
+      }
+    ],
+    [
+      "26",
+      {
+        "hiragana": "は",
         "katakana": "ハ",
         "romaji": "ha"
-    },
-    {
+      }
+    ],
+    [
+      "27",
+      {
+        "hiragana": "ひ",
         "katakana": "ヒ",
         "romaji": "hi"
-    },
-    {
+      }
+    ],
+    [
+      "28",
+      {
+        "hiragana": "ふ",
         "katakana": "フ",
         "romaji": "fu"
-    },
-    {
+      }
+    ],
+    [
+      "29",
+      {
+        "hiragana": "へ",
         "katakana": "へ",
         "romaji": "he"
-    },
-    {
+      }
+    ],
+    [
+      "30",
+      {
+        "hiragana": "ほ",
         "katakana": "ホ",
         "romaji": "ho"
-    },{
+      }
+    ],
+    [
+      "31",
+      {
+        "hiragana": "ま",
         "katakana": "マ",
         "romaji": "ma"
-    },
-    {
+      }
+    ],
+    [
+      "32",
+      {
+        "hiragana": "み",
         "katakana": "ミ",
         "romaji": "mi"
-    },
-    {
+      }
+    ],
+    [
+      "33",
+      {
+        "hiragana": "む",
         "katakana": "ム",
         "romaji": "mu"
-    },
-    {
+      }
+    ],
+    [
+      "34",
+      {
+        "hiragana": "め",
         "katakana": "メ",
         "romaji": "me"
-    },
-    {
+      }
+    ],
+    [
+      "35",
+      {
+        "hiragana": "も",
         "katakana": "モ",
         "romaji": "mo"
-    },{
+      }
+    ],
+    [
+      "36",
+      {
+        "hiragana": "ら",
         "katakana": "ラ",
         "romaji": "ra"
-    },
-    {
+      }
+    ],
+    [
+      "37",
+      {
+        "hiragana": "り",
         "katakana": "リ",
         "romaji": "ri"
-    },
-    {
+      }
+    ],
+    [
+      "38",
+      {
+        "hiragana": "る",
         "katakana": "ル",
         "romaji": "ru"
-    },
-    {
+      }
+    ],
+    [
+      "39",
+      {
+        "hiragana": "れ",
         "katakana": "レ",
         "romaji": "re"
-    },
-    {
+      }
+    ],
+    [
+      "40",
+      {
+        "hiragana": "ろ",
         "katakana": "ロ",
         "romaji": "ro"
-    },{
-        "katakana": "ヤ",
-        "romaji": "ya"
-    },
-    {
-        "katakana": "ユ",
-        "romaji": "yu"
-    },
-    {
-        "katakana": "よ",
-        "romaji": "yo"
-    },
-    {
-        "katakana": "ワ",
-        "romaji": "wa"
-    },
-    {
-        "katakana": "ヲ",
-        "romaji": "wo"
-    },
-    {
-        "katakana": "ン",
-        "romaji": "n"
-    },
-    {
+      }
+    ],
+    [
+      "41",
+      {
+        "hiragana": "だ",
         "katakana": "ダ",
         "romaji": "da"
-    },
-    {
+      }
+    ],
+    [
+      "42",
+      {
+        "hiragana": "ぢ",
         "katakana": "ヂ",
         "romaji": "ji"
-    },
-    {
+      }
+    ],
+    [
+      "43",
+      {
+        "hiragana": "づ",
         "katakana": "ヅ",
         "romaji": "zu"
-    },
-    {
+      }
+    ],
+    [
+      "44",
+      {
+        "hiragana": "で",
         "katakana": "デ",
         "romaji": "de"
-    },
-    {
+      }
+    ],
+    [
+      "45",
+      {
+        "hiragana": "ど",
         "katakana": "ド",
         "romaji": "do"
-    },
-    {
+      }
+    ],
+    [
+      "46",
+      {
+        "hiragana": "ざ",
         "katakana": "ザ",
         "romaji": "za"
-    },
-    {
+      }
+    ],
+    [
+      "47",
+      {
+        "hiragana": "じ",
         "katakana": "ジ",
         "romaji": "ji"
-    },
-    {
+      }
+    ],
+    [
+      "48",
+      {
+        "hiragana": "ず",
         "katakana": "ズ",
         "romaji": "zu"
-    },
-    {
+      }
+    ],
+    [
+      "49",
+      {
+        "hiragana": "ぜ",
         "katakana": "ゼ",
         "romaji": "ze"
-    },
-    {
+      }
+    ],
+    [
+      "50",
+      {
+        "hiragana": "ぞ",
         "katakana": "ゾ",
         "romaji": "zo"
-    },{
+      }
+    ],
+    [
+      "51",
+      {
+        "hiragana": "が",
         "katakana": "ガ",
         "romaji": "ga"
-    },
-    {
+      }
+    ],
+    [
+      "52",
+      {
+        "hiragana": "ぎ",
         "katakana": "ギ",
         "romaji": "gi"
-    },
-    {
+      }
+    ],
+    [
+      "53",
+      {
+        "hiragana": "ぐ",
         "katakana": "グ",
         "romaji": "gu"
-    },
-    {
+      }
+    ],
+    [
+      "54",
+      {
+        "hiragana": "げ",
         "katakana": "ゲ",
         "romaji": "ge"
-    },
-    {
+      }
+    ],
+    [
+      "55",
+      {
+        "hiragana": "ご",
         "katakana": "ゴ",
         "romaji": "go"
-    },{
+      }
+    ],
+    [
+      "56",
+      {
+        "hiragana": "ば",
         "katakana": "バ",
         "romaji": "ba"
-    },
-    {
+      }
+    ],
+    [
+      "57",
+      {
+        "hiragana": "び",
         "katakana": "ビ",
         "romaji": "bi"
-    },
-    {
+      }
+    ],
+    [
+      "58",
+      {
+        "hiragana": "ぶ",
         "katakana": "ブ",
         "romaji": "bu"
-    },
-    {
-        "katakana": "べ",
+      }
+    ],
+    [
+      "59",
+      {
+        "hiragana": "べ",
+        "katakana": "ベ",
         "romaji": "be"
-    },
-    {
+      }
+    ],
+    [
+      "60",
+      {
+        "hiragana": "ぼ",
         "katakana": "ボ",
         "romaji": "bo"
-    },{
-        "katakana": "パ",
-        "romaji": "pa"
-    },
-    {
-        "katakana": "ピ",
-        "romaji": "pi"
-    },
-    {
-        "katakana": "ぷ",
-        "romaji": "pu"
-    },
-    {
-        "katakana": "ぺ",
-        "romaji": "pe"
-    },
-    {
-        "katakana": "ポ",
-        "romaji": "po"
-    },{
+      }
+    ],
+    [
+      "1A",
+      {
+        "hiragana": "きゃ",
         "katakana": "キャ",
         "romaji": "kya"
-    },
-    {
+      }
+    ],
+    [
+      "1B",
+      {
+        "hiragana": "きゅ",
         "katakana": "キュ",
         "romaji": "kyu"
-    },
-    {
+      }
+    ],
+    [
+      "1C",
+      {
+        "hiragana": "きょ",
         "katakana": "キョ",
         "romaji": "kyo"
-    },
-    {
+      }
+    ],
+    [
+      "2A",
+      {
+        "hiragana": "しゃ",
         "katakana": "シャ",
         "romaji": "sha"
-    },
-    {
+      }
+    ],
+    [
+      "2B",
+      {
+        "hiragana": "しゅ",
         "katakana": "シュ",
         "romaji": "shu"
-    },{
+      }
+    ],
+    [
+      "2C",
+      {
+        "hiragana": "しょ",
         "katakana": "ショ",
         "romaji": "sho"
-    },
-    {
+      }
+    ],
+    [
+      "3A",
+      {
+        "hiragana": "ちゃ",
         "katakana": "チャ",
         "romaji": "cha"
-    },
-    {
+      }
+    ],
+    [
+      "3B",
+      {
+        "hiragana": "ちゅ",
         "katakana": "チュ",
         "romaji": "chu"
-    },
-    {
+      }
+    ],
+    [
+      "3C",
+      {
+        "hiragana": "ちょ",
         "katakana": "チョ",
         "romaji": "cho"
-    },
-    {
+      }
+    ],
+    [
+      "4A",
+      {
+        "hiragana": "にゃ",
         "katakana": "ニャ",
         "romaji": "nya"
-    },{
+      }
+    ],
+    [
+      "4B",
+      {
+        "hiragana": "にゅ",
         "katakana": "ニュ",
         "romaji": "nyu"
-    },
-    {
+      }
+    ],
+    [
+      "4C",
+      {
+        "hiragana": "にょ",
         "katakana": "ニョ",
         "romaji": "nyo"
-    },
-    {
+      }
+    ],
+    [
+      "5A",
+      {
+        "hiragana": "ひゃ",
         "katakana": "ヒャ",
         "romaji": "hya"
-    },
-    {
+      }
+    ],
+    [
+      "5B",
+      {
+        "hiragana": "ひゅ",
         "katakana": "ヒュ",
         "romaji": "hyu"
-    },
-    {
+      }
+    ],
+    [
+      "5C",
+      {
+        "hiragana": "ひょ",
         "katakana": "ヒョ",
         "romaji": "hyo"
-    },{
+      }
+    ],
+    [
+      "6A",
+      {
+        "hiragana": "みゃ",
         "katakana": "ミャ",
         "romaji": "mya"
-    },
-    {
+      }
+    ],
+    [
+      "6B",
+      {
+        "hiragana": "みゅ",
         "katakana": "ミュ",
         "romaji": "myu"
-    },
-    {
+      }
+    ],
+    [
+      "6C",
+      {
+        "hiragana": "みょ",
         "katakana": "ミョ",
         "romaji": "myo"
-    },
-    {
+      }
+    ],
+    [
+      "7A",
+      {
+        "hiragana": "りゃ",
         "katakana": "リャ",
         "romaji": "rya"
-    },
-    {
+      }
+    ],
+    [
+      "7B",
+      {
+        "hiragana": "りゅ",
         "katakana": "リュ",
         "romaji": "ryu"
-    },{
+      }
+    ],
+    [
+      "7C",
+      {
+        "hiragana": "りょ",
         "katakana": "リョ",
         "romaji": "ryo"
-    },
-    {
+      }
+    ],
+    [
+      "8A",
+      {
+        "hiragana": "ぎゃ",
         "katakana": "ギャ",
         "romaji": "gya"
-    },
-    {
+      }
+    ],
+    [
+      "8B",
+      {
+        "hiragana": "ぎゅ",
         "katakana": "ギュ",
         "romaji": "gyu"
-    },
-    {
+      }
+    ],
+    [
+      "8C",
+      {
+        "hiragana": "ぎょ",
         "katakana": "ギョ",
         "romaji": "gyo"
-    },
-    {
+      }
+    ],
+    [
+      "9A",
+      {
+        "hiragana": "じゃ",
         "katakana": "ジャ",
         "romaji": "ja"
-    },{
+      }
+    ],
+    [
+      "9B",
+      {
+        "hiragana": "じゅ",
         "katakana": "ジュ",
         "romaji": "ju"
-    },
-    {
+      }
+    ],
+    [
+      "9C",
+      {
+        "hiragana": "じょ",
         "katakana": "ジョ",
         "romaji": "jo"
-    },
-    {
+      }
+    ],
+    [
+      "10A",
+      {
+        "hiragana": "ぢゃ",
         "katakana": "ヂャ",
         "romaji": "ja"
-    },
-    {
+      }
+    ],
+    [
+      "10B",
+      {
+        "hiragana": "ぢゅ",
         "katakana": "ヂュ",
         "romaji": "ju"
-    },
-    {
+      }
+    ],
+    [
+      "10C",
+      {
+        "hiragana": "ぢょ",
         "katakana": "ヂョ",
         "romaji": "jo"
-    },{
+      }
+    ],
+    [
+      "11A",
+      {
+        "hiragana": "びゃ",
         "katakana": "ビャ",
         "romaji": "bya"
-    },
-    {
+      }
+    ],
+    [
+      "11B",
+      {
+        "hiragana": "びゅ",
         "katakana": "ビュ",
         "romaji": "byu"
-    },
-    {
+      }
+    ],
+    [
+      "11C",
+      {
+        "hiragana": "びょ",
         "katakana": "ビョ",
         "romaji": "byo"
-    },
-    {
+      }
+    ],
+    [
+      "12A",
+      {
+        "hiragana": "ぴゃ",
         "katakana": "ピャ",
         "romaji": "pya"
-    },
-    {
+      }
+    ],
+    [
+      "12B",
+      {
+        "hiragana": "ぴゅ",
         "katakana": "ピュ",
         "romaji": "pyu"
-    },{
+      }
+    ],
+    [
+      "12C",
+      {
+        "hiragana": "ぴょ",
         "katakana": "ピョ",
         "romaji": "pyo"
-    }
-    
-]
+      }
+    ],
+    [
+      "A",
+      {
+        "hiragana": "や",
+        "katakana": "ヤ",
+        "romaji": "ya"
+      }
+    ],
+    [
+      "B",
+      {
+        "hiragana": "ゆ",
+        "katakana": "ユ",
+        "romaji": "yu"
+      }
+    ],
+    [
+      "C",
+      {
+        "hiragana": "よ",
+        "katakana": "ユ",
+        "romaji": "yo"
+      }
+    ],
+    [
+      "D",
+      {
+        "hiragana": "わ",
+        "katakana": "ワ",
+        "romaji": "wa"
+      }
+    ],
+    [
+      "E",
+      {
+        "hiragana": "を",
+        "katakana": "ヲ",
+        "romaji": "wo"
+      }
+    ],
+    [
+      "F",
+      {
+        "hiragana": "ん",
+        "katakana": "ン",
+        "romaji": "n"
+      }
+    ]
+  ]
