@@ -11,7 +11,7 @@ import { AppComponent } from '../app.component';
 
 
 export class HiraganaKatakanaHomePageComponent{
-    title = 'Welcome to the Hiragana and Katakana Mini-Game!'
+    title = 'Welcome to the Hiragana and Katakana Mini-Game'
     description = 'Choose your challenge'
 } 
 

@@ -1,17 +1,25 @@
-<mat-card class="card">
-  <mat-card-header>
-    <mat-card-title>{{title}}</mat-card-title>
-    <mat-card-subtitle>{{description}}</mat-card-subtitle>
-  </mat-card-header>
-    <mat-grid-list cols="2">
-        <mat-grid-tile class="card-content-container">
-            <mat-card-content class="card-content" routerLink="/Hiragana">Hiragana</mat-card-content>
-        </mat-grid-tile>
-        <mat-grid-tile class="card-content-container">
-            <mat-card-content class="card-content" routerLink="/Katakana">Katakana</mat-card-content>
-        </mat-grid-tile>
-    </mat-grid-list>
-</mat-card>
+
+
+
+<div class="grid-container">
+  <mat-card>
+      <mat-card-title style="text-align: center; padding-top: 80px; font-weight: bolder; font-size: 30px; font-style: italic; color: black;">{{title}}</mat-card-title>
+      <mat-card-subtitle style="text-align: center; padding-top: 40px; padding-bottom: 25px; font-size: 17px; font-style: italic; color: black;">{{description}}!</mat-card-subtitle>
+    
+      <mat-grid-list cols="2"   >
+          <mat-grid-tile class="card-content-container" >
+              <mat-card-content class="card-content" routerLink="/Hiragana" style="font-weight: bold;">Hiragana</mat-card-content>
+          </mat-grid-tile>
+          <mat-grid-tile class="card-content-container">
+              <mat-card-content class="card-content" routerLink="/Katakana" style="font-weight: bold;">Katakana</mat-card-content>
+          </mat-grid-tile>
+      </mat-grid-list>
+  </mat-card>
+  <div class="button">
+    <mat-card-content class="button-content" routerLink="/home" style="font-weight: bold;">Back Home</mat-card-content>
+  </div>
+</div>
+
 
 
 
