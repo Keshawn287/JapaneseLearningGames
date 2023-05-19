@@ -1,0 +1,153 @@
+<div class="container">
+  <div class="button-container">
+    <mat-button-toggle >a</mat-button-toggle>
+    
+  </div>
+</div>
+
+<div *ngIf="!gameStarted">
+  <button (click)="startQuiz()">Start Quiz</button>
+</div>
+
+<div *ngIf="gameStarted">
+  <div>
+    <p>Hiragana: {{ currentCard.hiragana }}</p>
+    <input [(ngModel)]="userInput" placeholder="Type the Romaji">
+    <button (click)="submitAnswer()">Submit</button>
+  </div>
+  <div>
+    <p>Score: {{ score }}</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  <!--
+    <div>
+  <p>hiragana_1: {{ hiragana_1}} - {{ hiragana_1?.romaji}}</p>
+  <p>hiragana_2: {{ hiragana_2 }} - {{ hiragana_2?.[1]?.romaji }}</p>
+  <p>hiragana_3: {{ hiragana_3}} - {{ hiragana_3?.[1]?.romaji }}</p>
+  <p>hiragana_F: {{ hiragana_F?.hiragana }} - {{ hiragana_F?.romaji }} - {{ hiragana_F?.katakana }}</p>
+  
+</div>
+    
+
+    <div class="card">
+  <div class="card-content">
+    <p>hiragana_1: {{ hiragana_1 }}</p>
+    <input type="text" [(ngModel)]="hiragana_1Input" (keyup)="checkAnswer(hiragana_1Input, hiragana_2)">
+    <p *ngIf="hiragana_1Input && !isAnswerCorrect(hiragana_1Input, hiragana_2)" class="incorrect-feedback">Incorrect answer</p>
+    <p *ngIf="hiragana_1Input && isAnswerCorrect(hiragana_1Input, hiragana_2)" class="correct-feedback">Correct answer</p>
+  </div>
+</div>
+  
+    <p>Read Local JSON file student data using typescript HttpClient</p>
+
+  <table id="character">
+    <tr>
+        <th>Hiragana</th>
+        <th>Romaji</th>
+    </tr>
+    <tr *ngFor="let character of objectKeys(id).slice(0, 103)">
+      <td>{{ id[character].hiragana }}</td>
+      <td>{{ id[character].romaji }}</td>
+    </tr>
+  </table>
+
+
+    <table id="student">
+    <tr>
+      
+    </tr>
+    <ng-container *ngFor="let student of objectKeys(id)">
+      <tr *ngIf="student === '2'">
+        <td>{{ id[student].hiragana }}</td>
+        <td>{{ id[student].romaji }}</td>
+      </tr>
+    </ng-container>
+  </table>
+
+  <form>
+    <label>
+      <input type="radio" name="option" value="a" [(ngModel)]="selectedOption"> <div *ngIf="content">
+        
+      </div>
+    </label>
+    <label>
+      <input type="radio" name="option" value="b" [(ngModel)]="selectedOption"> <div *ngIf="content">
+        {{ content }}
+      </div>
+    </label>
+    <button (click)="showContent()">Submit</button>
+  </form>
+
+
+
+
+  <div *ngIf="isLoading">
+  Loading...
+</div>
+
+<div *ngIf="!isLoading">
+  <h2>Select Romaji:</h2>
+  <mat-button-toggle-group #buttonGroup="matButtonToggleGroup">
+    <mat-button-toggle *ngFor="let romaji of romaji" (change)="onRomajiToggle(romaji, $event.source.checked)">
+      {{ romaji }}
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <button mat-raised-button color="primary" (click)="startQuiz()">Start Quiz</button>
+
+  <div *ngIf="showQuiz">
+    <h2>Quiz:</h2>
+    <div *ngFor="let card of cards; let i = index">
+      <mat-card [ngClass]="{'correct': card.isCorrect === true, 'incorrect': card.isCorrect === false, 'answered': card.answered}">
+        <mat-card-header>
+          <mat-card-title>{{ card.hiragana }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-form-field>
+            <input matInput [disabled]="card.answered" [(ngModel)]="card.userAnswer" (input)="onCardAnswered(i, card.userAnswer)">
+          </mat-form-field>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <button mat-raised-button color="primary" (click)="submitQuiz()">Submit Quiz</button>
+  </div>
+
+  <div *ngIf="showScore">
+    <h2>Score:</h2>
+    <p>{{ score }}%</p>
+  </div>
+</div>
+
+  -->
+

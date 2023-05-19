@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { HiraganaKatakanaHomePageComponent } from './hiragana-katakana-home-page/hiragana-katakana-home-page.component';
-import { HiraganaComponent } from './hiragana/hiragana.component';
-import { KatakanaComponent } from './katakana/katakana.component';
+import { HiraganaKatakanaHomePageComponent } from './KanaGame/hiragana-katakana-home-page/hiragana-katakana-home-page.component';
+import { HiraganaComponent } from './KanaGame/hiragana/hiragana.component';
+import { KatakanaComponent } from './KanaGame/katakana/katakana.component';
 import { CombinedComponent } from './combined/combined.component';
 
 

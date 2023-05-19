@@ -9,14 +9,17 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { HomeMiniGameCardStructureComponent } from './home-mini-game-card-structure/home-mini-game-card-structure.component';
-import { HiraganaKatakanaHomePageComponent } from './hiragana-katakana-home-page/hiragana-katakana-home-page.component';
+import { HiraganaKatakanaHomePageComponent } from './KanaGame/hiragana-katakana-home-page/hiragana-katakana-home-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
-import { HiraganaComponent } from './hiragana/hiragana.component';
-import { KatakanaComponent } from './katakana/katakana.component';
+import { HiraganaComponent } from './KanaGame/hiragana/hiragana.component';
+import { KatakanaComponent } from './KanaGame/katakana/katakana.component';
 import { CombinedComponent } from './combined/combined.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -29,7 +32,7 @@ import { FormsModule } from '@angular/forms';
     HiraganaComponent,
     KatakanaComponent,
     CombinedComponent,
-
+   
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,9 @@ import { FormsModule } from '@angular/forms';
     MatGridListModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatButtonToggleModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
