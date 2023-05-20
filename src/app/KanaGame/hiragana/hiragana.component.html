@@ -1,4 +1,85 @@
 <div class="container">
+  <h2>Hiragana Quiz Instructions</h2>
+  <p>1. Rule One</p>
+  <p>2. Rule Two</p>
+  <p>3. Rule Three</p>
+
+<div class="card-container">
+  <div class="row" style="margin-bottom: 30px;">
+    <div class="col-lg-4">
+      <mat-card style="height: 100%;">
+        <mat-card-content>
+          <h3>Main Kana</h3>
+          <mat-button-toggle-group vertical multiple class="full-width">
+            <mat-button-toggle  value="character_a" (click)="adjustLearningList(hiragana_a)">Hiragana a</mat-button-toggle>
+            <mat-button-toggle  value="character_ka" (click)="adjustLearningList(hiragana_ka)">Hiragana ka</mat-button-toggle>
+            <mat-button-toggle  value="character_sa" (click)="adjustLearningList(hiragana_sa)">Hiragana sa</mat-button-toggle>
+            <mat-button-toggle  value="character_ta" (click)="adjustLearningList(hiragana_ta)">Hiragana ta</mat-button-toggle>
+            <mat-button-toggle  value="character_na" (click)="adjustLearningList(hiragana_na)">Hiragana na</mat-button-toggle>
+            <mat-button-toggle  value="character_ha" (click)="adjustLearningList(hiragana_ha)">Hiragana ha</mat-button-toggle>
+            <mat-button-toggle  value="character_ma" (click)="adjustLearningList(hiragana_ma)">Hiragana ma</mat-button-toggle>
+            <mat-button-toggle  value="character_ya" (click)="adjustLearningList(hiragana_ya)">Hiragana ya</mat-button-toggle>
+            <mat-button-toggle  value="character_ra" (click)="adjustLearningList(hiragana_ra)">Hiragana ra</mat-button-toggle>
+          </mat-button-toggle-group>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-lg-4">
+      <mat-card style="height: 100%;">
+        <mat-card-content>
+          <h3>Special Kana</h3>
+          <mat-button-toggle-group vertical multiple class="full-width">
+            <mat-button-toggle  value="character_ta" (click)="adjustLearningList(hiragana_ta)">Hiragana ta</mat-button-toggle>
+            <mat-button-toggle  value="character_na" (click)="adjustLearningList(hiragana_na)">Hiragana na</mat-button-toggle>
+            <mat-button-toggle  value="character_ha" (click)="adjustLearningList(hiragana_ha)">Hiragana ha</mat-button-toggle>
+            <mat-button-toggle  value="character_na" (click)="adjustLearningList(hiragana_na)">Hiragana na</mat-button-toggle>
+            <mat-button-toggle  value="character_ha" (click)="adjustLearningList(hiragana_ha)">Hiragana ha</mat-button-toggle>
+          </mat-button-toggle-group>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-lg-4">
+      <mat-card style="height: 100%;">
+        <mat-card-content>
+          <h3>Combined Kana</h3>
+          <mat-button-toggle-group vertical multiple class="full-width">
+            <mat-button-toggle  value="character_ma" (click)="adjustLearningList(hiragana_ma)">Hiragana ma</mat-button-toggle>
+            <mat-button-toggle  value="character_ya" (click)="adjustLearningList(hiragana_ya)">Hiragana ya</mat-button-toggle>
+            <mat-button-toggle  value="character_ra" (click)="adjustLearningList(hiragana_ra)">Hiragana ra</mat-button-toggle>
+            <mat-button-toggle  value="character_ma" (click)="adjustLearningList(hiragana_ma)">Hiragana ma</mat-button-toggle>
+            <mat-button-toggle  value="character_ya" (click)="adjustLearningList(hiragana_ya)">Hiragana ya</mat-button-toggle>
+            <mat-button-toggle  value="character_ra" (click)="adjustLearningList(hiragana_ra)">Hiragana ra</mat-button-toggle>
+            <mat-button-toggle  value="character_ma" (click)="adjustLearningList(hiragana_ma)">Hiragana ma</mat-button-toggle>
+            <mat-button-toggle  value="character_ya" (click)="adjustLearningList(hiragana_ya)">Hiragana ya</mat-button-toggle>
+            <mat-button-toggle  value="character_ra" (click)="adjustLearningList(hiragana_ra)">Hiragana ra</mat-button-toggle>
+            <mat-button-toggle  value="character_ma" (click)="adjustLearningList(hiragana_ma)">Hiragana ma</mat-button-toggle>
+            <mat-button-toggle  value="character_ya" (click)="adjustLearningList(hiragana_ya)">Hiragana ya</mat-button-toggle>
+            <mat-button-toggle  value="character_ra" (click)="adjustLearningList(hiragana_ra)">Hiragana ra</mat-button-toggle>
+          </mat-button-toggle-group>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+  <button [disabled]="!startLearning" mat-raised-button (click)="startLearning()">Start Quiz</button>
+  <button mat-raised-button routerLink="/HiraganaKatakanaHome">Back</button>
+</div>
+  <!--
+ 
+<div *ngFor="let category of hiraganaCategories">
+  <h3>{{ category.name }}</h3>
+  <ul>
+    <li *ngFor="let character of category.characters">
+      <label>
+        <input type="checkbox" (change)="adjustLearningList(character)">
+        {{ character.hiragana }} - {{ character.romaji }}
+      </label>
+    </li>
+  </ul>
+</div>
+
+<button [disabled]="!startLearning" (click)="startLearning()">Start Learning</button>
+    <div class="container">
   <div class="button-container">
     <mat-button-toggle >a</mat-button-toggle>
     
@@ -19,37 +100,6 @@
     <p>Score: {{ score }}</p>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  <!--
     <div>
   <p>hiragana_1: {{ hiragana_1}} - {{ hiragana_1?.romaji}}</p>
   <p>hiragana_2: {{ hiragana_2 }} - {{ hiragana_2?.[1]?.romaji }}</p>

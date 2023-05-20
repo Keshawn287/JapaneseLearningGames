@@ -1,14 +1,143 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import { HttpClient } from '@angular/common/http';
 import { KanaServiceService } from "src/app/services/kana-service.service";
 import { Router } from "@angular/router";
+
+
+
 
 @Component({
   selector: "app-hiragana",
   templateUrl: "./hiragana.component.html",
-  styleUrls: ["./hiragana.component.css"],
+  styleUrls: ["./hiragana.component.scss"],
+
 })
 export class HiraganaComponent {
-  constructor(private kanaService: KanaServiceService) {}
+  startEnabled: boolean = false;
+  hiragana: any;
+  hiraganaCategories: any[] = [];
+  learnLearningList: any[] = [];
+
+  hiragana_a:any
+  hiragana_ka:any
+  hiragana_sa:any
+  hiragana_ta:any
+  hiragana_na:any
+  hiragana_ha:any
+  hiragana_ma:any
+  hiragana_ra:any
+  hiragana_ya:any
+  hiragana_ga:any
+  hiragana_da:any
+  hiragana_za:any
+  hiragana_ba:any
+  hiragana_pa:any
+  hiragana_kya:any
+  hiragana_sha:any
+  hiragana_cha:any
+  hiragana_nya:any
+  hiragana_hya:any
+  hiragana_mya:any
+  hiragana_rya:any
+  hiragana_gya:any
+  hiragana_ja:any
+  hiragana_dya:any
+  hiragana_bya:any
+  hiragana_pya:any
+  
+
+  constructor(
+    private kanaServiceService: KanaServiceService,
+    private router: Router
+  ) {}
+
+  ngOnInit() {
+    this.initGetHiragana().then((value) => {
+      this.createCategories();
+    });
+  }
+
+  
+  initGetHiragana(): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.kanaServiceService.getKanaData().subscribe(
+        (hiraganaItems) => {
+          console.log("Got hiragana characters");
+          this.hiragana = hiraganaItems;
+          resolve(hiraganaItems);
+        },
+        (error) => {
+          console.log(error);
+          reject(error);
+        }
+      );
+    });
+  }
+
+  createCategories() {
+    this.hiragana_a = this.hiragana.a
+    this.hiragana_ka = this.hiragana.ka
+    this.hiragana_sa = this.hiragana.sa
+    this.hiragana_ta = this.hiragana.ta
+    this.hiragana_na = this.hiragana.na
+    this.hiragana_ha = this.hiragana.ha
+    this.hiragana_ma = this.hiragana.ma
+    this.hiragana_ra = this.hiragana.ra
+    this.hiragana_ya = this.hiragana.ya
+    this.hiragana_ga = this.hiragana.ga
+    this.hiragana_da = this.hiragana.da
+    this.hiragana_za = this.hiragana.za
+    this.hiragana_ba = this.hiragana.ba
+    this.hiragana_pa = this.hiragana.pa
+    this.hiragana_kya = this.hiragana.kya
+    this.hiragana_sha = this.hiragana.sha
+    this.hiragana_cha = this.hiragana.cha
+    this.hiragana_nya = this.hiragana.nya
+    this.hiragana_hya = this.hiragana.hya
+    this.hiragana_mya = this.hiragana.mya
+    this.hiragana_rya = this.hiragana.rya
+    this.hiragana_gya = this.hiragana.gya
+    this.hiragana_ja = this.hiragana.ja
+    this.hiragana_dya = this.hiragana.dya
+    this.hiragana_bya = this.hiragana.bya
+    this.hiragana_pya = this.hiragana.pya
+  }
+  startLearning(){
+    this.setLocalStorage();
+    this.router.navigate(['/HiraganaQuiz']);
+  }
+
+  adjustLearningList(input: any){
+    input.forEach((character: { hiragana: any; romaji: any}) => {
+      const index = this.learnLearningList.findIndex(
+        (item) => 
+          item.hiragana === character.hiragana && item.romaji === character.romaji
+      );
+      if (index != -1){
+        this.learnLearningList.splice(index, 1);
+      } else {
+        this.learnLearningList.push(character);
+      }
+    });
+
+    this.checkIfStartLearningButtonNeedsToBeEnabled();
+  }
+  checkIfStartLearningButtonNeedsToBeEnabled(){
+    this.startEnabled = this.learnLearningList.length > 0;
+  }
+  setLocalStorage(){
+    var adjustListAsString = '';
+    this.learnLearningList.forEach((letter) => {
+      adjustListAsString +=
+        letter.hiragana + " " + letter.romaji + " ; ";
+
+    });
+    sessionStorage.setItem('listToLearn', adjustListAsString);
+  }
+}
+/*
+
+constructor(private kanaService: KanaServiceService) {}
 
   startLearningEnabled: boolean = false;
   hiragana: any;
@@ -161,9 +290,9 @@ export class HiraganaComponent {
       [array[i], array[j]] = [array[j], array[i]];
     }
   }
-}
 
-/*
+
+
 combineArrays(hiraganaArrays: string[], romajiArrays: string[]): { hiragana: string, romaji: string }[] {
     const combinedArray: { hiragana: string, romaji: string }[] = [];
     for (let i = 0; i < this.hiraganaArrays.length; i++) {

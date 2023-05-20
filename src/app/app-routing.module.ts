@@ -6,6 +6,8 @@ import { HiraganaKatakanaHomePageComponent } from './KanaGame/hiragana-katakana-
 import { HiraganaComponent } from './KanaGame/hiragana/hiragana.component';
 import { KatakanaComponent } from './KanaGame/katakana/katakana.component';
 import { CombinedComponent } from './combined/combined.component';
+import { HiraganaQuizComponent } from './KanaGame/hiragana-quiz/hiragana-quiz.component';
+import { KatakanaQuizComponent } from './KanaGame/katakana-quiz/katakana-quiz.component';
 
 
 const routes: Routes = [
@@ -33,6 +35,14 @@ const routes: Routes = [
   {
     path: 'CombinedComponent',
     component: HiraganaKatakanaHomePageComponent,
+  },
+  {
+    path: 'HiraganaQuiz',
+    component: HiraganaQuizComponent,
+  },
+  {
+    path: 'KatakanaQuiz',
+    component: KatakanaQuizComponent,
   }
 
 ];

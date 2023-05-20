@@ -9,9 +9,15 @@ interface StringMap {
   templateUrl: './katakana.component.html',
   styleUrls: ['./katakana.component.css']
 })
-export class KatakanaComponent implements OnInit {
+export class KatakanaComponent {
 
-  selectedCards: string[] = [];
+ 
+  
+}
+
+
+/*
+ selectedCards: string[] = [];
   id:any;
   url: string = '/assets/hiragana-katakana.json';
   selectedOption!: string;
@@ -32,10 +38,6 @@ export class KatakanaComponent implements OnInit {
   objectKeys(obj: StringMap) {
     return Object.keys(obj);
   }
-  
-}
-
-/*
 
   //buttons to start game
   mainKana = false;

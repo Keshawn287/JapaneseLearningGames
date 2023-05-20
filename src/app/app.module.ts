@@ -17,8 +17,12 @@ import { KatakanaComponent } from './KanaGame/katakana/katakana.component';
 import { CombinedComponent } from './combined/combined.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HiraganaCardGameComponent } from './KanaGame/hiragana-card-game/hiragana-card-game.component';
+import { KatakanaCardGameComponent } from './KanaGame/katakana-card-game/katakana-card-game.component';
+import { KatakanaQuizComponent } from './KanaGame/katakana-quiz/katakana-quiz.component';
+import { HiraganaQuizComponent } from './KanaGame/hiragana-quiz/hiragana-quiz.component';
 
 
 
@@ -32,6 +36,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     HiraganaComponent,
     KatakanaComponent,
     CombinedComponent,
+    HiraganaCardGameComponent,
+    KatakanaCardGameComponent,
+    KatakanaQuizComponent,
+    HiraganaQuizComponent,
    
   ],
   imports: [
