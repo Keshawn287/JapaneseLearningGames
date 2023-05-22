@@ -44,6 +44,15 @@ export class HiraganaComponent {
   hiragana_dya:any
   hiragana_bya:any
   hiragana_pya:any
+
+  hiragana_all:any
+  hiragana_main:any
+  hiragana_special:any
+  hiragana_combined:any
+
+  selectedOptionAll: boolean = false;
+  selectedOptionMain: boolean = false;
+  selectedOption: string = '';
   
 
   constructor(
@@ -75,6 +84,11 @@ export class HiraganaComponent {
   }
 
   createCategories() {
+    this.hiragana_all = this.hiragana.all
+    this.hiragana_main = this.hiragana.main
+    this.hiragana_special = this.hiragana.special
+    this.hiragana_combined = this.hiragana.combined
+    
     this.hiragana_a = this.hiragana.a
     this.hiragana_ka = this.hiragana.ka
     this.hiragana_sa = this.hiragana.sa
@@ -105,6 +119,12 @@ export class HiraganaComponent {
   startLearning(){
     this.setLocalStorage();
     this.router.navigate(['/HiraganaQuiz']);
+  }
+
+  disableButton(select: string){
+ 
+    this.selectedOption = select;
+
   }
 
   adjustLearningList(input: any){

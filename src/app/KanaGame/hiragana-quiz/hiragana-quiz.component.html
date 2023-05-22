@@ -1,1 +1,14 @@
-
+<div *ngFor="let card of gameData">
+    <h1>Match the Romaji</h1>
+    <p>Hiragana: {{ card.hiragana }}</p>
+    <input [(ngModel)]="answer" placeholder="Type the Romaji">
+    <button (click)="quizGrade()">Submit</button>
+    <p>Correct: {{ score.correct }}</p>
+    <p>Incorrect: {{ score.wrong }}</p>
+  </div>
+  <div *ngIf="!card">
+    <h1>Game Over</h1>
+    <p>Your final score:</p>
+    <p>Correct: {{ score.correct }}</p>
+    <p>Incorrect: {{ score.wrong }}</p>
+  </div>
