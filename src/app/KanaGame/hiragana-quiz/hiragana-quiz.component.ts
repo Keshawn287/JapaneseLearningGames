@@ -7,47 +7,40 @@ import { Component } from '@angular/core';
 })
 export class HiraganaQuizComponent {
 
-  gameData = [
-    {hiragana: "Session Storage Failed To Load/Missing Session Storage", romaji: ""},
-
-  ]
-  card: any;
+  
+  gameData: any[] = [];
   answer = '';
-  score = {
+  Totalscore = {
     correct: 0,
     wrong: 0
   };
 
-  ngOnInit(){
-    this.parseLocalStorage();
-    this.gameCard();
 
+  constructor(){
+    this.parseLocalStorage();
   }
 
   parseLocalStorage(){
-    var list = sessionStorage.getItem("listToLearn")!
+    var list = sessionStorage.getItem("listToLearn") || '';
     const pairs = list.trim().split(';');
-    const result = pairs.map(pair => {
+    this.gameData = pairs.map(pair => {
       const [hiragana, romaji] = pair.trim().split(' ');
-      return {hiragana, romaji };
+      return {hiragana, romaji, answer: '', score:{correct: 0, wrong: 0 } };
     });
-    this.gameData = result
-    return result;
+    this.gameData.pop(); //deals with empty card at the end of the game
   }
-  gameCard(){
-    if(this.gameData.length > 0){
-      this.card = this.gameData.shift();
-      this.answer = '';
+ 
+  quizGrade(data: any){
+    if(data.romaji.trim().toLowerCase() === data.answer.trim().toLowerCase()){
+      data.score.correct++;
+      this.Totalscore.correct++;
     }else{
-      this.card = null;
+      data.score.wrong++;
+      this.Totalscore.wrong++;
     }
-  }
-  quizGrade(){
-    if(this.answer.trim().toLowerCase() === this.card.romaji.trim().toLowerCase()){
-      this.score.correct++;
-    }else{
-      this.score.wrong++;
-    }
-    this.gameCard();
+    data.answer = '';
+   
+    
+   
   }
 }

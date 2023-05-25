@@ -1,4 +1,52 @@
-<div *ngFor="let card of gameData">
+<div class="container">
+  <h1>Hiragana Quiz Instructions</h1>
+  <p>1. rule one</p>
+  <p>2. rule two</p>
+  <p>3. rule three</p>
+  <mat-card>
+    <div *ngIf="gameData && gameData.length > 0">
+      <div *ngFor="let card of gameData">
+        <mat-card>
+          <div>
+            <p>{{ card.hiragana }}</p>
+            <input matInput [(ngModel)]="card.answer" placeholder="Type Romaji" (keydown.enter)="quizGrade(card)">
+            <p>Correct: {{ card.score.correct }}</p>
+            <p>Incorrect: {{ card.score.wrong }}</p>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    <button mat-button>Submit</button>
+  </mat-card>
+</div>
+
+
+
+
+  <!--
+    <div *ngIf="gameData && gameData.length > 0">
+  <div *ngFor="let card of gameData">
+    <h1>Match the Romaji</h1>
+    <p>Hiragana: {{ card.hiragana }}</p>
+    <input [(ngModel)]="card.answer" placeholder="Type the Romaji">
+    <button (click)="quizGrade(card)">Submit</button>
+    <p>Correct: {{ card.score.correct }}</p>
+    <p>Incorrect: {{ card.score.wrong }}</p>
+  </div>
+</div>
+
+<div *ngIf="gameData && gameData.length === 0">
+  <h1>Game Over</h1>
+  <p>Your final score:</p>
+  <p>Correct: {{ Totalscore.correct }}</p>
+  <p>Incorrect: {{ Totalscore.wrong }}</p>
+</div>
+
+    
+    
+    
+    
+    <div *ngIf="card">
     <h1>Match the Romaji</h1>
     <p>Hiragana: {{ card.hiragana }}</p>
     <input [(ngModel)]="answer" placeholder="Type the Romaji">
@@ -11,4 +59,7 @@
     <p>Your final score:</p>
     <p>Correct: {{ score.correct }}</p>
     <p>Incorrect: {{ score.wrong }}</p>
-  </div>
+
+
+ 
+  </div>-->
