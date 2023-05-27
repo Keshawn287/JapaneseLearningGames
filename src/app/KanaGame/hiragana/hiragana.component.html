@@ -5,7 +5,7 @@
   <p>3. Rule Three</p>
 
 <mat-card>
-  <mat-button-toggle value="character_all" (click)="adjustLearningList(hiragana_all)" style="margin-bottom: 15px;">
+  <mat-button-toggle value="character_all" (click)="adjustLearningList(hiragana_all)" [disabled]="allKanaButtonActive" style="margin-bottom: 15px;">
     All Kana
   </mat-button-toggle>
   <div class="card-container">
@@ -15,7 +15,7 @@
           <mat-card-content>
             <h3>Main Kana</h3>
             <mat-button-toggle-group vertical multiple class="full-width">
-              <mat-button-toggle value="character_main" (click)="adjustLearningList(hiragana_main)" >All Main Kana</mat-button-toggle>
+              <mat-button-toggle value="character_main" (click)="adjustLearningList(hiragana_main)"  [disabled]="mainKanaButtonActive">All Main Kana</mat-button-toggle>
               <mat-button-toggle  value="character_a" (click)="adjustLearningList(hiragana_a)">Hiragana a</mat-button-toggle>
               <mat-button-toggle  value="character_ka" (click)="adjustLearningList(hiragana_ka)">Hiragana ka</mat-button-toggle>
               <mat-button-toggle  value="character_sa" (click)="adjustLearningList(hiragana_sa)">Hiragana sa</mat-button-toggle>

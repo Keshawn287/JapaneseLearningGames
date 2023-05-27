@@ -53,6 +53,10 @@ export class HiraganaComponent {
   selectedOptionAll: boolean = false;
   selectedOptionMain: boolean = false;
   selectedOption: string = '';
+
+  allKanaButtonActive: boolean = false;
+  mainKanaButtonActive: boolean = false;
+  
   
 
   constructor(
@@ -139,6 +143,17 @@ export class HiraganaComponent {
         this.learnLearningList.push(character);
       }
     });
+      // Disable appropriate buttons based on the selection
+  if (input === this.hiragana_all) {
+    this.allKanaButtonActive = true;
+    this.mainKanaButtonActive = false;
+  } else if (input === this.hiragana_main) {
+    this.allKanaButtonActive = false;
+    this.mainKanaButtonActive = true;
+  } else {
+    this.allKanaButtonActive = false;
+    this.mainKanaButtonActive = false;
+  }
 
     this.checkIfStartLearningButtonNeedsToBeEnabled();
   }
@@ -154,6 +169,7 @@ export class HiraganaComponent {
     });
     sessionStorage.setItem('listToLearn', adjustListAsString);
   }
+
 }
 /*
 

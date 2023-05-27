@@ -1,24 +1,39 @@
 <div class="container">
-  <h1>Hiragana Quiz Instructions</h1>
-  <p>1. rule one</p>
-  <p>2. rule two</p>
-  <p>3. rule three</p>
+  <h1 *ngIf="!showScore">Hiragana Quiz Instructions</h1>
+  <p *ngIf="!showScore">1. rule one</p>
+  <p *ngIf="!showScore">2. rule two</p>
+  <p *ngIf="!showScore">3. rule three</p>
+  
   <mat-card>
     <div *ngIf="gameData && gameData.length > 0">
-      <div *ngFor="let card of gameData">
-        <mat-card>
-          <div>
-            <p>{{ card.hiragana }}</p>
-            <input matInput [(ngModel)]="card.answer" placeholder="Type Romaji" (keydown.enter)="quizGrade(card)">
-            <p>Correct: {{ card.score.correct }}</p>
-            <p>Incorrect: {{ card.score.wrong }}</p>
-          </div>
-        </mat-card>
+      <div class="card-grid">
+        <div *ngFor="let card of gameData;" [ngClass]="{'green': card.score.correct, 'grey': card.score.wrong}">
+          <mat-card style="height: 250px; padding-top: 25px;" *ngIf="!showScore">
+            <div class="card-container" >
+              <p style="font-weight: bolder; font-size: 40px;">{{ card.hiragana }}</p>
+              <input matInput [(ngModel)]="card.answer" placeholder="Type Romaji" (keydown.enter)="quizGrade(card);" [disabled]="card.RightAnswerDisable">
+              <p>Correct: {{ card.score.correct }}</p>
+              <p>Incorrect: {{ card.score.wrong }}</p>
+            </div>
+          </mat-card>
+        </div>
       </div>
     </div>
-    <button mat-button>Submit</button>
+    <button mat-button (click)="onSubmit()" *ngIf="!showScore" [disabled]="!answerRequired || !gameData || gameData.length === 0">Submit</button>
+  </mat-card>
+
+  <mat-card *ngIf="showScore">
+    <div *ngIf="Totalscore.correct + Totalscore.wrong > 0">
+      <h3>Total Grade</h3>
+      <p>Percentage: {{ (Totalscore.correct / (Totalscore.correct + Totalscore.wrong) * 100).toFixed(2) }}%</p>
+      <button mat-button (click)="reloadGame()">Retry Quiz</button>
+      <button mat-button routerLink="/Hiragana">Try New Quiz</button>
+      <button mat-button routerLink="/Katakana">Try Katakana</button>
+      <button mat-button routerLink="/Home">Back Home</button>
+    </div>
   </mat-card>
 </div>
+
 
 
 
