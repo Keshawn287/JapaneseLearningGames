@@ -16,8 +16,33 @@
     height: 100%;
   }
   .green{
-    background-color: lightgreen;
+    color: lightgreen;
   }
   .grey{
+    color: grey;
+  }
+  .light-green-background {
+    background-color: lightgreen;
+  }
+  
+  .grey-background {
     background-color: grey;
   }
+  .table-bordered {
+    border-collapse: collapse;
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+ 
+ 
+  
+  
+  
+  
+  
+  
+  

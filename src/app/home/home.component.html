@@ -1,14 +1,30 @@
 <div class="container" style="text-align: center; justify-content: center;">
-    <mat-grid-list cols="2">
+    <mat-grid-list cols="3">
       <mat-card-title style="padding-top: 100px; font-weight: bolder; font-size: 30px; font-style: italic; color: black;">Welcome to Japanese Learning Mini-Games!</mat-card-title>
       <mat-card-subtitle style="padding-top: 40px; padding-bottom: 25px; font-size: 19px; font-style: italic; color: black;">A series of different mini-games built to help improve the knowledge of foundational 
         Japanese concepts for the Japanese writing system.</mat-card-subtitle>
       <mat-grid-tile>
         <app-home-mini-game-card-structure 
           gameRoutePath="HiraganaKatakanaHome"
-          gameFrontCardTitle="あ\ア"
+          gameFrontCardTitle="Kana Quiz"
           gameNameTitle="Hiragana/Katakana Quiz"
           gameDescription="A memory game in which the user will match hiragana or katakana characters with their corresponding romaji.">  
+        </app-home-mini-game-card-structure>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <app-home-mini-game-card-structure 
+          gameRoutePath="home"
+          gameFrontCardTitle="Numbers Quiz"
+          gameNameTitle="Opps! This game isnt active yet."
+          gameDescription="">  
+        </app-home-mini-game-card-structure>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <app-home-mini-game-card-structure 
+          gameRoutePath="home"
+          gameFrontCardTitle="Colors Quiz"
+          gameNameTitle="Opps! This game isnt active yet."
+          gameDescription="">  
         </app-home-mini-game-card-structure>
       </mat-grid-tile>
     </mat-grid-list>

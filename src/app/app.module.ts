@@ -23,6 +23,7 @@ import { HiraganaCardGameComponent } from './KanaGame/hiragana-card-game/hiragan
 import { KatakanaCardGameComponent } from './KanaGame/katakana-card-game/katakana-card-game.component';
 import { KatakanaQuizComponent } from './KanaGame/katakana-quiz/katakana-quiz.component';
 import { HiraganaQuizComponent } from './KanaGame/hiragana-quiz/hiragana-quiz.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -55,7 +56,8 @@ import { HiraganaQuizComponent } from './KanaGame/hiragana-quiz/hiragana-quiz.co
     HttpClientModule,
     FormsModule,
     MatButtonToggleModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

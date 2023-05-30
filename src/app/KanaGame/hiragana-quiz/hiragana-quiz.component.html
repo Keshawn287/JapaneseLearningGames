@@ -7,8 +7,8 @@
   <mat-card>
     <div *ngIf="gameData && gameData.length > 0">
       <div class="card-grid">
-        <div *ngFor="let card of gameData;" [ngClass]="{'green': card.score.correct, 'grey': card.score.wrong}">
-          <mat-card style="height: 250px; padding-top: 25px;" *ngIf="!showScore">
+        <div *ngFor="let card of gameData;">
+          <mat-card style="height: 250px; padding-top: 25px;" *ngIf="!showScore" [ngClass]="{'light-green-background': card.score.correct, 'grey-background': card.score.wrong}">
             <div class="card-container" >
               <p style="font-weight: bolder; font-size: 40px;">{{ card.hiragana }}</p>
               <input matInput [(ngModel)]="card.answer" placeholder="Type Romaji" (keydown.enter)="quizGrade(card);" [disabled]="card.RightAnswerDisable">
@@ -19,9 +19,8 @@
         </div>
       </div>
     </div>
-    <button mat-button (click)="onSubmit()" *ngIf="!showScore" [disabled]="!answerRequired || !gameData || gameData.length === 0">Submit</button>
+    <button mat-button (click)="onSubmit()" *ngIf="!showScore">Submit</button>
   </mat-card>
-
   <mat-card *ngIf="showScore">
     <div *ngIf="Totalscore.correct + Totalscore.wrong > 0">
       <h3>Total Grade</h3>
@@ -31,6 +30,28 @@
       <button mat-button routerLink="/Katakana">Try Katakana</button>
       <button mat-button routerLink="/Home">Back Home</button>
     </div>
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <th>Hiragana</th>
+          <th>Correct</th>
+          <th>Incorrect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let card of gameData">
+          <td style="font-size: 28px; font-weight: bold;">{{ card.hiragana }}</td>
+          <td style="font-size: 28px; font-weight: bold; color:lightgreen">
+            <span *ngIf="card.score.correct" >&#10004;</span>
+            <span *ngIf="!card.score.correct"></span>
+          </td>
+          <td style="font-size: 28px; font-weight: bold; color:red">
+            <span *ngIf="card.score.wrong">&#10006;</span>
+            <span *ngIf="!card.score.wrong"></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </mat-card>
 </div>
 

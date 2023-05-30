@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
+
 @Component({
   selector: 'app-hiragana-quiz',
   templateUrl: './hiragana-quiz.component.html',
@@ -73,6 +74,5 @@ export class HiraganaQuizComponent {
     this.showScore = true;
 
   }
-
   
 }
