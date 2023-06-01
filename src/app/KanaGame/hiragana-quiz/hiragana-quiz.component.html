@@ -41,13 +41,13 @@
       <tbody>
         <tr *ngFor="let card of gameData">
           <td style="font-size: 28px; font-weight: bold;">{{ card.hiragana }}</td>
-          <td style="font-size: 28px; font-weight: bold; color:lightgreen">
-            <span *ngIf="card.score.correct" >&#10004;</span>
-            <span *ngIf="!card.score.correct"></span>
+          <td style="font-size: 28px; font-weight: bold;">
+            <span *ngIf="card.score.correct" style="color:lightgreen" >&#10004;</span>
+            <span *ngIf="!card.score.correct">😐</span>
           </td>
-          <td style="font-size: 28px; font-weight: bold; color:red">
-            <span *ngIf="card.score.wrong">&#10006;</span>
-            <span *ngIf="!card.score.wrong"></span>
+          <td style="font-size: 28px; font-weight: bold; ">
+            <span *ngIf="card.score.wrong" style="color: red">&#10006;</span>
+            <span *ngIf="!card.score.wrong">😀</span>
           </td>
         </tr>
       </tbody>

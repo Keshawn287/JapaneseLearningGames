@@ -24,6 +24,8 @@ import { KatakanaCardGameComponent } from './KanaGame/katakana-card-game/katakan
 import { KatakanaQuizComponent } from './KanaGame/katakana-quiz/katakana-quiz.component';
 import { HiraganaQuizComponent } from './KanaGame/hiragana-quiz/hiragana-quiz.component';
 import {MatTableModule} from '@angular/material/table';
+import { EnterTabDirective } from './enter-tab.directive';
+import { EnableControlDirective } from './enable-control.directive';
 
 
 
@@ -41,6 +43,8 @@ import {MatTableModule} from '@angular/material/table';
     KatakanaCardGameComponent,
     KatakanaQuizComponent,
     HiraganaQuizComponent,
+    EnterTabDirective,
+    EnableControlDirective,
    
   ],
   imports: [

@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { EnableControlDirective } from 'src/app/enable-control.directive';
+import { NgModule } from '@angular/core';
 
 
 @Component({
   selector: 'app-hiragana-quiz',
   templateUrl: './hiragana-quiz.component.html',
-  styleUrls: ['./hiragana-quiz.component.css']
+  styleUrls: ['./hiragana-quiz.component.css'],
+  
 })
 export class HiraganaQuizComponent {
-
-
 
   showScore: boolean = false;
   RightAnswerDisable: boolean = false;
@@ -73,6 +74,7 @@ export class HiraganaQuizComponent {
     console.log(`Grade: ${percentage.toFixed(2)}%`);
     this.showScore = true;
 
-  }
-  
+  } 
 }
+
+
